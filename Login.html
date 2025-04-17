@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn/SignUp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="auth-nav">
+        <button id="show-login" class="active">Login</button>
+        <button id="show-signup">Sign Up</button>
+    </nav>
+
+    <!-- Login Page -->
+    <div class="auth-page login-page active">
+        <div class="auth-container animate__animated animate__fadeIn">
+            <h1>Welcome Back!</h1>
+            <p class="subtitle">Login to continue your journey</p>
+            
+            <form class="auth-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Email or Username" required>
+                    <span class="icon">📧</span>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                    <span class="icon">🔒</span>
+                </div>
+                
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn login-btn">Let's Go! 🚀</button>
+                
+                <div class="social-login">
+                    <p>Or login with</p>
+                    <div class="social-icons">
+                        <button type="button" class="social-btn google">G</button>
+                        <button type="button" class="social-btn facebook">f</button>
+                        <button type="button" class="social-btn twitter">𝕏</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Page -->
+    <div class="auth-page signup-page">
+        <div class="auth-container animate__animated animate__fadeIn">
+            <h1>Join Us!</h1>
+            <p class="subtitle">Create your account in seconds</p>
+            
+            <form class="auth-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="icon">👤</span>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                    <span class="icon">📧</span>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" placeholder="Create Password" required>
+                    <span class="icon">🔒</span>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <span class="icon">🔐</span>
+                </div>
+                
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> I agree to terms & conditions
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn signup-btn">Get Started! ✨</button>
+                
+                <div class="social-login">
+                    <p>Or sign up with</p>
+                    <div class="social-icons">
+                        <button type="button" class="social-btn google">G</button>
+                        <button type="button" class="social-btn facebook">f</button>
+                        <button type="button" class="social-btn twitter">𝕏</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
